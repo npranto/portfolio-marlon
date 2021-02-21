@@ -9,6 +9,9 @@ const getSize = (props) => {
   return 'sm'; // fallback default size
 };
 
+//=============================================================================
+// PRIMARY BUTTON
+//=============================================================================
 const PrimaryButton = (props) => {
   const { children, className = '' } = props;
   const customClassName = `
@@ -20,6 +23,9 @@ const PrimaryButton = (props) => {
   );
 };
 
+//=============================================================================
+// SECONDARY BUTTON
+//=============================================================================
 const SecondaryButton = (props) => {
   const { children, className = '' } = props;
   const customClassName = `
@@ -33,6 +39,9 @@ const SecondaryButton = (props) => {
   );
 };
 
+//=============================================================================
+// DEFAULT BUTTON
+//=============================================================================
 const DefaultButton = (props) => {
   const { children, className = '' } = props;
   const customClassName = `
