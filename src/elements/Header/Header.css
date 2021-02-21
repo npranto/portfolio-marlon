@@ -1,0 +1,15 @@
+.Header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Header.sm {
+  font-size: 1em;
+}
+
+.Header.md {
+  font-size: 2em;
+}
+
+.Header.lg {
+  font-size: 3em;
+}
