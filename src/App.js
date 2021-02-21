@@ -1,17 +1,21 @@
 import './App.css';
 import Button from './elements/Button/Button';
 import Header from './elements/Header/Header';
+import SocialItem from './elements/SocialItem/SocialItem';
 
 function App() {
   return (
     <div className="App">
-      <div style={{ backgroundColor: 'whitesmoke', marginBottom: '1em' }}>
+      {/* Header */}
+      {/* <div style={{ backgroundColor: 'whitesmoke', marginBottom: '1em' }}>
         <Header>Default Header</Header>
         <Header sm>Small Header</Header>
         <Header md>Medium Header</Header>
         <Header lg>Large Header</Header>
-      </div>
-      <div style={{ backgroundColor: 'whitesmoke', marginBottom: '1em' }}>
+      </div> */}
+
+      {/* Button */}
+      {/* <div style={{ backgroundColor: 'whitesmoke', marginBottom: '1em' }}>
         <Button> Default Header</Button>
         <Button sm>Small Header</Button>
         <Button md>Medium Header</Button>
@@ -40,6 +44,15 @@ function App() {
         <Button secondary lg>
           Large Header
         </Button>
+      </div> */}
+
+      {/* SocialItem */}
+      <div style={{ backgroundColor: 'whitesmoke', marginBottom: '1em' }}>
+        <SocialItem sm name="TikTok" url="google.com" />
+        <SocialItem sm />
+        <SocialItem md />
+        <SocialItem lg />
+        <SocialItem xl />
       </div>
     </div>
   );

@@ -40,6 +40,26 @@ const SecondaryButton = (props) => {
 };
 
 //=============================================================================
+// LINK BUTTON
+//=============================================================================
+const LinkButton = (props) => {
+  const { children, className = '', href = '#/', resetLinkStyle } = props;
+  const customClassName = `
+    ${className}
+    link
+    ${resetLinkStyle ? 'reset' : ''}
+  `;
+
+  console.log({ linkProps: props });
+
+  return (
+    <a href={href} {...props} className={removeExtraSpaces(customClassName)}>
+      {children}
+    </a>
+  );
+};
+
+//=============================================================================
 // DEFAULT BUTTON
 //=============================================================================
 const DefaultButton = (props) => {
@@ -56,12 +76,14 @@ const DefaultButton = (props) => {
 };
 
 function Button(props) {
-  const { className = '', primary, secondary } = props;
+  const { className = '', primary, secondary, link } = props;
   const customClassName = `
     Button
     ${className}
     ${getSize(props)}
   `;
+
+  console.log({ buttonProps: props });
 
   if (primary)
     return (
@@ -74,6 +96,14 @@ function Button(props) {
   if (secondary)
     return (
       <SecondaryButton
+        {...props}
+        className={removeExtraSpaces(customClassName)}
+        type="button"
+      />
+    );
+  if (link)
+    return (
+      <LinkButton
         {...props}
         className={removeExtraSpaces(customClassName)}
         type="button"
