@@ -1,4 +1,5 @@
 import React from 'react';
+import removeExtraSpaces from '../../helpers/removeExtraSpaces';
 import './Header.css';
 
 const getSize = (props) => {
@@ -6,7 +7,7 @@ const getSize = (props) => {
   if (props.md) return 'md';
   if (props.lg) return 'lg';
   return 'sm'; // fallback default size
-}
+};
 
 export default function Header(props) {
   const { className = '', children } = props;
@@ -15,9 +16,5 @@ export default function Header(props) {
     ${className}
     ${getSize(props)}
   `;
-  return (
-    <h1 className={customClassName}>
-      {children}
-    </h1>
-  )
+  return <h1 className={removeExtraSpaces(customClassName)}>{children}</h1>;
 }

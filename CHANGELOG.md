@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add `Header` element
+- Add `Button` element - primary, secondary and default styles
 
 ## [0.0.1] - 2021-02-20
 
@@ -20,5 +21,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add README.md file
 - Remove unnecessary boilerplate files
 
-[Unreleased]: https://github.com/npranto/portfolio-marlon/compare/v0.0.1...npranto:master
+[unreleased]: https://github.com/npranto/portfolio-marlon/compare/v0.0.1...npranto:main
 [0.0.1]: https://github.com/npranto/portfolio-marlon/tree/v0.0.1
