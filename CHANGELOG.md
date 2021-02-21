@@ -9,9 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add `Header` element
+
+## [0.0.1] - 2021-02-20
+
+### Added
+
 - Add this CHANGELOG file
 - Add `docs` directory to keep create-react-app README file just for reference
 - Add README.md file
 - Remove unnecessary boilerplate files
 
-[unreleased]: https://github.com/npranto/portfolio-marlon/tree/v0.0.1
+[Unreleased]: https://github.com/npranto/portfolio-marlon/compare/v0.0.1...npranto:master
+[0.0.1]: https://github.com/npranto/portfolio-marlon/tree/v0.0.1
