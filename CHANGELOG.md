@@ -9,12 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Add `Header` element
-- Add `Button` element - primary, secondary and default styles
+- Add `Menu` component
 - Add `SocialItem` element
-  - Supported socials:
-    - "LinkedIn", "Facebook", "Twitter", "Reddit", "GitHub", "Youtube",
-      "Pinterest", "Instagram", "Tumbler", "Medium", "TikTok"
+- Add `Button` element - primary, secondary and default styles
+- Add `Header` element
 
 ## [0.0.1] - 2021-02-20
 

@@ -1,6 +1,7 @@
 import './App.css';
 import Button from './elements/Button/Button';
 import Header from './elements/Header/Header';
+import Menu from './components/Menu/Menu';
 import SocialItem from './elements/SocialItem/SocialItem';
 
 function App() {
@@ -47,12 +48,23 @@ function App() {
       </div> */}
 
       {/* SocialItem */}
-      <div style={{ backgroundColor: 'whitesmoke', marginBottom: '1em' }}>
+      {/* <div style={{ backgroundColor: 'whitesmoke', marginBottom: '1em' }}>
         <SocialItem sm name="TikTok" url="google.com" />
         <SocialItem sm />
         <SocialItem md />
         <SocialItem lg />
         <SocialItem xl />
+      </div> */}
+
+      {/* Menu */}
+      <div style={{ backgroundColor: 'whitesmoke', marginBottom: '1em' }}>
+        <Menu items={[
+          <Button secondary md>Home</Button>,
+          <Button secondary md>About</Button>,
+          <Button secondary md>Skills</Button>,
+          <Button secondary md>Work</Button>,
+          <Button secondary md>Contact</Button>,
+        ]} />
       </div>
     </div>
   );

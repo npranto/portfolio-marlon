@@ -30,7 +30,7 @@ const SOCIALS = [
 ];
 
 const getSize = (props) => {
-  if (props.xm) return '1em';
+  if (props.xs) return '1em';
   if (props.sm) return '1.5em';
   if (props.md) return '2em';
   if (props.lg) return '2.5em';
@@ -38,7 +38,17 @@ const getSize = (props) => {
   return '1.5em'; // fallback default size
 };
 
-export default function SocialItem(props) {
+const defaultProps = {
+  xs: false,
+  sm: false,
+  md: false,
+  lg: false,
+  xl: false,
+  name: SOCIALS[0].name,
+  className: '',
+}
+
+function SocialItem(props) {
   const { name = SOCIALS[0].name, className = '', url } = props;
   const social = SOCIALS.find(
     (s) => s.name.toLocaleLowerCase() === name.toLowerCase(),
@@ -56,13 +66,11 @@ export default function SocialItem(props) {
   `;
   const size = getSize(props);
 
-  console.log({ props });
-
   if (url) {
     return (
       <Button
         link
-        resetLinkStyle
+        resetlinkstyle
         className="SocialItem link"
         href={url}
         target="_blank"
@@ -85,3 +93,6 @@ export default function SocialItem(props) {
     />
   );
 }
+
+SocialItem.defaultProps = defaultProps;
+export default SocialItem;

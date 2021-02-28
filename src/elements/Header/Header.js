@@ -9,7 +9,14 @@ const getSize = (props) => {
   return 'sm'; // fallback default size
 };
 
-export default function Header(props) {
+const defaultProps = {
+  sm: false,
+  md: false,
+  lg: false,
+  className: '',
+}
+
+function Header(props) {
   const { className = '', children } = props;
   const customClassName = `
     Header
@@ -18,3 +25,6 @@ export default function Header(props) {
   `;
   return <h1 className={removeExtraSpaces(customClassName)}>{children}</h1>;
 }
+
+Header.defaultProps = defaultProps;
+export default Header;
