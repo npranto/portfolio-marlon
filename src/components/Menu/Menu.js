@@ -15,7 +15,7 @@ function Menu(props) {
   `;
 
   if (!items || !items.length) {
-    throw new Error('Please add `items` to render menu');
+    throw new Error('Please add `items` prop to render `Menu` component');
   }
 
   return (

@@ -3,6 +3,7 @@ import Button from './elements/Button/Button';
 import Header from './elements/Header/Header';
 import Menu from './components/Menu/Menu';
 import SocialItem from './elements/SocialItem/SocialItem';
+import ProfilePicture from './elements/ProfilePicture/ProfilePicture';
 
 function App() {
   return (
@@ -58,14 +59,35 @@ function App() {
 
       {/* Menu */}
       <div style={{ backgroundColor: 'whitesmoke', marginBottom: '1em' }}>
-        <Menu items={[
-          <Button secondary md>Home</Button>,
-          <Button secondary md>About</Button>,
-          <Button secondary md>Skills</Button>,
-          <Button secondary md>Work</Button>,
-          <Button secondary md>Contact</Button>,
-        ]} />
+        <Menu
+          items={[
+            <Button secondary md>
+              Home
+            </Button>,
+            <Button secondary md>
+              About
+            </Button>,
+            <Button secondary md>
+              Skills
+            </Button>,
+            <Button secondary md>
+              Work
+            </Button>,
+            <Button secondary md>
+              Contact
+            </Button>,
+          ]}
+        />
       </div>
+
+      {/* ProfilePicture */}
+      <ProfilePicture src="https://avatars.githubusercontent.com/u/13524077?s=460&u=a7f857421c86667518064906c87d5262268bdddd&v=4" />
+      <ProfilePicture width="200px" height="200px" />
+      <ProfilePicture
+        src="https://avatars.githubusercontent.com/u/13524077?s=460&u=a7f857421c86667518064906c87d5262268bdddd&v=4"
+        height="600px"
+      />
+      <ProfilePicture src="https://avatars.githubusercontent.com/u/13524077?s=460&u=a7f857421c86667518064906c87d5262268bdddd&v=4" />
     </div>
   );
 }
