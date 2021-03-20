@@ -1,0 +1,37 @@
+.SkillItem .skill-details {
+  display: flex;
+  align-items: center;
+}
+
+.SkillItem .skill-details {
+  padding: 0.5em 1em;
+}
+
+.SkillItem .skill-logo-wrapper {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SkillItem .skill-logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.SkillItem .skill-name {
+  margin-left: 1em;
+  margin-right: 1em;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.SkillItem .skill-proficiency {
+  text-align: right;
+  flex: 1 1 0;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}

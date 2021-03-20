@@ -7,6 +7,7 @@ import ProfilePicture from './elements/ProfilePicture/ProfilePicture';
 import Text from './elements/Text/Text';
 import Icon from './elements/Icon/Icon';
 import ProgressBar from './elements/ProgressBar/ProgressBar';
+import SkillItem from './elements/SkillItem/SkillItem';
 
 function App() {
   return (
@@ -98,7 +99,27 @@ function App() {
       <Icon xl /> */}
 
       {/* ProgressBar */}
-      <ProgressBar status={50} />
+      {/* <ProgressBar status={50} /> */}
+
+      {/* SkillItem */}
+      <SkillItem
+        key="1"
+        logo={'https://source.unsplash.com/random/300x200'}
+        name="HTML"
+        proficiency={90}
+      />
+      <SkillItem
+        key="2"
+        logo={'https://source.unsplash.com/random/1000x300'}
+        name="CSS"
+        proficiency={75}
+      />
+      <SkillItem
+        key="3"
+        logo={'https://source.unsplash.com/random/100x200'}
+        name="JS"
+        proficiency={50}
+      />
     </div>
   );
 }
