@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add `Icon` element
 - Add `Text` element
 - Add `ProfilePicture` element
 - Add `Menu` component

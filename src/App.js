@@ -5,7 +5,7 @@ import Menu from './components/Menu/Menu';
 import SocialItem from './elements/SocialItem/SocialItem';
 import ProfilePicture from './elements/ProfilePicture/ProfilePicture';
 import Text from './elements/Text/Text';
-
+import Icon from './elements/Icon/Icon';
 
 function App() {
   return (
@@ -93,6 +93,14 @@ function App() {
 
       {/* Text */}
       <Text>Hello World!</Text>
+
+      {/* Icon */}
+      <Icon />
+      <Icon xs />
+      <Icon sm name="menu" />
+      <Icon md />
+      <Icon lg />
+      <Icon xl />
     </div>
   );
 }
