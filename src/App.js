@@ -4,6 +4,8 @@ import Header from './elements/Header/Header';
 import Menu from './components/Menu/Menu';
 import SocialItem from './elements/SocialItem/SocialItem';
 import ProfilePicture from './elements/ProfilePicture/ProfilePicture';
+import Text from './elements/Text/Text';
+
 
 function App() {
   return (
@@ -58,7 +60,7 @@ function App() {
       </div> */}
 
       {/* Menu */}
-      <div style={{ backgroundColor: 'whitesmoke', marginBottom: '1em' }}>
+      {/* <div style={{ backgroundColor: 'whitesmoke', marginBottom: '1em' }}>
         <Menu
           items={[
             <Button secondary md>
@@ -78,16 +80,19 @@ function App() {
             </Button>,
           ]}
         />
-      </div>
+      </div> */}
 
       {/* ProfilePicture */}
-      <ProfilePicture src="https://avatars.githubusercontent.com/u/13524077?s=460&u=a7f857421c86667518064906c87d5262268bdddd&v=4" />
+      {/* <ProfilePicture src="https://avatars.githubusercontent.com/u/13524077?s=460&u=a7f857421c86667518064906c87d5262268bdddd&v=4" />
       <ProfilePicture width="200px" height="200px" />
       <ProfilePicture
         src="https://avatars.githubusercontent.com/u/13524077?s=460&u=a7f857421c86667518064906c87d5262268bdddd&v=4"
         height="600px"
       />
-      <ProfilePicture src="https://avatars.githubusercontent.com/u/13524077?s=460&u=a7f857421c86667518064906c87d5262268bdddd&v=4" />
+      <ProfilePicture src="https://avatars.githubusercontent.com/u/13524077?s=460&u=a7f857421c86667518064906c87d5262268bdddd&v=4" /> */}
+
+      {/* Text */}
+      <Text>Hello World!</Text>
     </div>
   );
 }
