@@ -1,0 +1,8 @@
+.Menu {
+  list-style: none;
+  padding: 1em 2em;
+}
+
+.Menu .item {
+  margin-bottom: 1em;
+}

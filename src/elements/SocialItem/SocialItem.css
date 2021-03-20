@@ -1,0 +1,13 @@
+.SocialItem {
+  margin: 0;
+  padding: 0;
+}
+
+.SocialItem.clickable {
+  cursor: pointer;
+}
+
+.SocialItem.social-icon-link {
+  text-decoration: none;
+  color: black;
+}

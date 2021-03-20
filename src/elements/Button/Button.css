@@ -1,0 +1,53 @@
+.Button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.Button.default {
+  background-color: transparent;
+}
+
+.Button.primary {
+  background-color: #4d81ee;
+  color: #f5f8fd;
+  padding: 0.5em 1em;
+  border-radius: 7px;
+}
+
+.Button.secondary {
+  color: #f5f8fd;
+  padding-bottom: 0.5em;
+  background: black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid transparent;
+  transition: 150ms ease-in-out;
+}
+.Button.secondary.md {
+  border-bottom-width: 5px;
+}
+.Button.secondary.lg {
+  border-bottom-width: 7.5px;
+}
+.Button.secondary:hover {
+  border-color: #4d81ee;
+}
+
+.Button.link.reset {
+  all: unset;
+}
+
+.Button.sm {
+  font-size: 1em;
+}
+
+.Button.md {
+  font-size: 1.5em;
+}
+
+.Button.lg {
+  font-size: 2.5em;
+}
