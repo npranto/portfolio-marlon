@@ -6,6 +6,7 @@ import SocialItem from './elements/SocialItem/SocialItem';
 import ProfilePicture from './elements/ProfilePicture/ProfilePicture';
 import Text from './elements/Text/Text';
 import Icon from './elements/Icon/Icon';
+import ProgressBar from './elements/ProgressBar/ProgressBar';
 
 function App() {
   return (
@@ -17,7 +18,6 @@ function App() {
         <Header md>Medium Header</Header>
         <Header lg>Large Header</Header>
       </div> */}
-
       {/* Button */}
       {/* <div style={{ backgroundColor: 'whitesmoke', marginBottom: '1em' }}>
         <Button> Default Header</Button>
@@ -49,7 +49,6 @@ function App() {
           Large Header
         </Button>
       </div> */}
-
       {/* SocialItem */}
       {/* <div style={{ backgroundColor: 'whitesmoke', marginBottom: '1em' }}>
         <SocialItem sm name="TikTok" url="google.com" />
@@ -58,7 +57,6 @@ function App() {
         <SocialItem lg />
         <SocialItem xl />
       </div> */}
-
       {/* Menu */}
       {/* <div style={{ backgroundColor: 'whitesmoke', marginBottom: '1em' }}>
         <Menu
@@ -81,7 +79,6 @@ function App() {
           ]}
         />
       </div> */}
-
       {/* ProfilePicture */}
       {/* <ProfilePicture src="https://avatars.githubusercontent.com/u/13524077?s=460&u=a7f857421c86667518064906c87d5262268bdddd&v=4" />
       <ProfilePicture width="200px" height="200px" />
@@ -90,17 +87,18 @@ function App() {
         height="600px"
       />
       <ProfilePicture src="https://avatars.githubusercontent.com/u/13524077?s=460&u=a7f857421c86667518064906c87d5262268bdddd&v=4" /> */}
-
       {/* Text */}
-      <Text>Hello World!</Text>
-
+      {/* <Text>Hello World!</Text> */}
       {/* Icon */}
-      <Icon />
+      {/* <Icon />
       <Icon xs />
       <Icon sm name="menu" />
       <Icon md />
       <Icon lg />
-      <Icon xl />
+      <Icon xl /> */}
+
+      {/* ProgressBar */}
+      <ProgressBar status={50} />
     </div>
   );
 }
