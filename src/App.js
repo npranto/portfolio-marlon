@@ -9,6 +9,7 @@ import Icon from './elements/Icon/Icon';
 import ProgressBar from './elements/ProgressBar/ProgressBar';
 import SkillItem from './elements/SkillItem/SkillItem';
 import Card from './elements/Card/Card';
+import Input from './elements/Input/Input';
 
 function App() {
   return (
@@ -123,7 +124,7 @@ function App() {
       /> */}
 
       {/* Card */}
-      <Card
+      {/* <Card
         coverImage="https://source.unsplash.com/random/1000x300"
         overlay={<div>Hello World!</div>}
       />
@@ -131,6 +132,15 @@ function App() {
       <Card
         overlay={<div>Hello World!</div>}
         reference="http://www.google.com"
+      /> */}
+
+      {/* Input */}
+      <Input
+        type="text"
+        name="firstName"
+        initialValue="John"
+        onChange={(e) => console.log('logging onChange', e.target.value)}
+        onBlur={(e) => console.log('logging onBlur', e.target.value)}
       />
     </div>
   );
