@@ -8,6 +8,7 @@ import Text from './elements/Text/Text';
 import Icon from './elements/Icon/Icon';
 import ProgressBar from './elements/ProgressBar/ProgressBar';
 import SkillItem from './elements/SkillItem/SkillItem';
+import Card from './elements/Card/Card';
 
 function App() {
   return (
@@ -102,7 +103,7 @@ function App() {
       {/* <ProgressBar status={50} /> */}
 
       {/* SkillItem */}
-      <SkillItem
+      {/* <SkillItem
         key="1"
         logo={'https://source.unsplash.com/random/300x200'}
         name="HTML"
@@ -119,6 +120,17 @@ function App() {
         logo={'https://source.unsplash.com/random/100x200'}
         name="JS"
         proficiency={50}
+      /> */}
+
+      {/* Card */}
+      <Card
+        coverImage="https://source.unsplash.com/random/1000x300"
+        overlay={<div>Hello World!</div>}
+      />
+      <Card coverColor="orange" overlay={<div>Hello World!</div>} />
+      <Card
+        overlay={<div>Hello World!</div>}
+        reference="http://www.google.com"
       />
     </div>
   );
